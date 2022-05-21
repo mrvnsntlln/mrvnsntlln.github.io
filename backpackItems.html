@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="backpackItems-style.css">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Staatliches&display=swap" rel="stylesheet">
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+    <title>Document</title>
+</head>
+<body class="backpack-body">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-secondary fs-1 col-4 ms-5 active" href="home.html">adven<span class="text-white">TOUR</span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light rounded"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link  fs-3 text-secondary ms-sm-5 ms-5 active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    SHOP
+                    </a>
+                    <ul class="dropdown-menu bg-secondary bg-opacity-25" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-white active" href="backpackItems.html">BAGS</a></li>
+                        <li><a class="dropdown-item text-white" href="#">SHOES</a></li>
+                        <li><a class="dropdown-item text-white" href="#">JACKETS</a></li>
+                        <li><a class="dropdown-item text-white" href="#">CAPS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary fs-3 ms-sm-5 ms-5" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary fs-3 ms-sm-5 ms-5" aria-current="page" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary fs-3 ms-sm-5 ms-5" href="#" tabindex="-1" aria-disabled="true">DEVELOPER</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <p class="text-center text-secondary arrival-text">NEW ARRIVALS</p>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner text-white text-center ">
+                <div class="carousel-item active d-flex flex-md-column flex-sm-column">
+                    <p>BACKPACKS</p>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                            <h1 class="text-center">ASTRO</h1>
+                            <img src="images/new-backpack-1.jpg" class="image">
+                            <div class="bottom">
+                                <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#astro">
+                                    VIEW ITEM
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                            <h1 class="text-center">GALAGA</h1>
+                            <img src="images/new-backpack-2.jpg" class="image">
+                            <div class="bottom">
+                                <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#galaga">
+                                    VIEW ITEM
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                            <h1 class="text-center">TECHNO</h1>
+                            <img src="images/new-backpack-3.jpg" class="image" style="margin-top: 20px;">
+                            <div class="bottom">
+                                <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#techno">
+                                    VIEW ITEM
+                                </button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="carousel-item d-flex flex-md-column flex-sm-column">
+                    <p>DUFFLE BAGS</p>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                            <h1 class="text-center">TWO-TONE</h1>
+                            <img src="images/new-duffle-1.jpg" class="image">
+                            <div class="bottom">
+                                <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#two-tone">
+                                    VIEW ITEM
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                            <h1 class="text-center">EARTHIC</h1>
+                            <img src="images/new-duffle-2.jpg" class="image">
+                            <div class="bottom">
+                                <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#earthic">
+                                    VIEW ITEM
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                            <h1 class="text-center">MYSTIC</h1>
+                            <img src="images/new-duffle-3.jpg" class="image" style="margin-top: 40px;">
+                            <div class="bottom">
+                                <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#mystic">
+                                    VIEW ITEM
+                                </button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center all-items mt-4 text-white">
+            <p class="text-secondary">ALL ITEMS</p>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                    <h1 class="text-center">STREAM</h1>
+                    <img src="images/bag-1.jpg" class="image">
+                    <div class="bottom">
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#stream">
+                            VIEW ITEM
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                    <h1 class="text-center">VOID</h1>
+                    <img src="images/bag-2.jpg" class="image">
+                    <div class="bottom">
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#void">
+                            VIEW ITEM
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                    <h1 class="text-center">NEON</h1>
+                    <img src="images/bag-3.jpg" class="image">
+                    <div class="bottom">
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#neon">
+                            VIEW ITEM
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                    <h1 class="text-center">ROYALTY</h1>
+                    <img src="images/bag-4.jpg" class="image ms-sm-5 ps-sm-4 ms-md-0 ps-md-0">
+                    <div class="bottom">
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#royalty">
+                            VIEW ITEM
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                    <h1 class="text-center">CAMPER</h1>
+                    <img src="images/bag-5.jpg" class="image ms-sm-5 ps-sm-4 ms-md-0 ps-md-0" style="margin-top: 30px;">
+                    <div class="bottom">
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#camper">
+                            VIEW ITEM
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                    <h1 class="text-center">WILDLIFE</h1>
+                    <img src="images/bag-6.jpg" class="image" style="margin-top: 30px;">
+                    <div class="bottom">
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#wildlife">
+                            VIEW ITEM
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                    <h1 class="text-center">WHITE-SNOW</h1>
+                    <img src="images/bag-7.jpg" class="image" style="margin-left: 20px;">
+                    <div class="bottom">
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#white-snow">
+                            VIEW ITEM
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                    <h1 class="text-center">GRANDIA</h1>
+                    <img src="images/bag-8.jpg" class="image">
+                    <div class="bottom">
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#grandia">
+                            VIEW ITEM
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 my-sm-5 new-backpack">
+                    <h1 class="text-center">CAMO</h1>
+                    <img src="images/bag-9.jpg" class="image" style="margin-top: 40px;">
+                    <div class="bottom">
+                        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#camo">
+                            VIEW ITEM
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="modal fade " id="astro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">BACKPACKS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/new-backpack-1.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>ASTRO</p>
+                        <P>$100.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="modal fade " id="galaga" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">BACKPACKS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/new-backpack-2.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>GALAGA</p>
+                        <P>$95.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="modal fade " id="techno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">BACKPACKS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/new-backpack-3.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>TECHNO</p>
+                        <P>$115.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="modal fade " id="two-tone" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">DUFFLE BAGS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/new-duffle-1.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>TWO-TONE</p>
+                        <P>$80.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="modal fade " id="earthic" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">DUFFLE BAGS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/new-duffle-2.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>EARTHIC</p>
+                        <P>$85.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="modal fade " id="mystic" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">DUFFLE BAGS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/new-duffle-3.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>MYSTIC</p>
+                        <P>$150.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="modal fade " id="stream" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">BACKPACKS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/bag-1.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>STREAM</p>
+                        <P>$50.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="void" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">BACKPACKS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/bag-2.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>VOID</p>
+                        <P>$60.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="neon" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">BACKPACKS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/bag-3.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>NEON</p>
+                        <P>$200.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="royalty" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">BACKPACKS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/bag-4.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>ROYALTY</p>
+                        <P>$140.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="camper" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">BACKPACKS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/bag-5.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>CAMPER</p>
+                        <P>$180.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="wildlife" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">BACKPACKS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/bag-6.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>WILDLIFE</p>
+                        <P>$200.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="white-snow" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">DUFFLE BAGS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/bag-7.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>WHITE-SNOW</p>
+                        <P>$150.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="grandia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">DUFFLE BAGS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/bag-8.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>GRANDIA</p>
+                        <P>$190.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="camo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">DUFFLE BAGS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row">
+                    <img src="images/bag-9.jpg" class="col-4">
+                    <div class="col-8 fs-5">
+                        <p>CAMO</p>
+                        <P>$200.00</P>
+                        <label>Quantity: </label>
+                        <input type="number" class="text-center">
+                        <button type="button" class="mt-3 ms-3 w-75 btn btn-dark">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid d-flex justify-content-center footer">
+        <div class="align-self-center py-2">
+            <h4 class="text-white">©2022 BY <span class="text-secondary">ADVEN</span>TOUR</h4>
+        </div>
+    </footer>
+</body>
+</html>
