@@ -44,6 +44,14 @@
     .carousel-control-next-icon{
         margin-left: 150px;
     }
+    @media all and (max-width: 971px){
+        .carousel-control-next-icon{
+            margin-left: 0px;
+        }
+        .carousel-control-prev-icon{
+            margin-right: 0px;
+        }
+    }
     .item a{
         font-size: 20px;
     }
