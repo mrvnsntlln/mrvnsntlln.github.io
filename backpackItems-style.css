@@ -111,7 +111,7 @@
         background-color: #020202;
     }
     .modal-body input{
-        max-width: 120px;
+        max-width: 80px;
         border: 2px solid black;
     }
     .modal-body button{
