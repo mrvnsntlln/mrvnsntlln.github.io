@@ -52,6 +52,11 @@
             margin-right: 0px;
         }
     }
+    @media all and (max-width: 575px){
+        .carousel-item{
+            margin-left: 20px;
+        }
+    }
     .item a{
         font-size: 20px;
     }
