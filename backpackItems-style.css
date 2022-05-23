@@ -105,4 +105,11 @@
     .modal-footer button:hover{
         background-color: #020202;
     }
+    .modal-body input{
+        max-width: 120px;
+        border: 2px solid black;
+    }
+    .modal-body button{
+        max-width: 150px;
+    }
 
