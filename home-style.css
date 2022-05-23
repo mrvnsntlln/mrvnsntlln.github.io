@@ -63,15 +63,16 @@
     .item > a:hover{
         background-color: #020202;
     }
-    @media all and (max-width: 575px{
-        .carousel-inner{
+    @media all and (max-width: 575px){
+        .c1{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .c2{
             display: flex;
             flex-direction: column;
         }
-        .c1{
-            order: 2;
+        .item{
+            padding: 20px;
         }
-        .c2{
-            order: 1;
-        }
-    })
+    }
