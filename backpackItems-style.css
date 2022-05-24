@@ -44,12 +44,15 @@
     .carousel-control-next-icon{
         margin-left: 150px;
     }
-    @media all and (max-width: 971px){
+    @media all and (max-width: 976px){
         .carousel-control-next-icon{
-            margin-left: 0px;
+            margin-left: 50px;
         }
         .carousel-control-prev-icon{
-            margin-right: 0px;
+            margin-right: 50px;
+        }
+        .new-backpack > div > button{
+            font-size: 15px;
         }
     }
     @media all and (max-width: 575px){
