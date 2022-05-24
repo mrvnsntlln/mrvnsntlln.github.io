@@ -44,15 +44,39 @@
     .carousel-control-next-icon{
         margin-left: 150px;
     }
-    @media all and (max-width: 971px){
+    @media all and (max-width: 976px){
         .carousel-control-next-icon{
-            margin-left: 0px;
+            margin-left: 50px;
         }
         .carousel-control-prev-icon{
-            margin-right: 0px;
+            margin-right: 50px;
+        }
+        .new-backpack > div > button{
+            font-size: 15px;
+        }
+        .s13 h1{
+            margin-bottom: -30px;
+        }
+        .s13 > div > button{
+            margin-bottom: 50px;
+        }
+        .s14 h1{
+            margin-bottom: -30px;
+        }
+        .s14 img{
+            margin-top: -10px;
+        }
+        .s14 > div > button{
+            margin-bottom: 35px;
+        }
+        .s15 > div > button{
+            margin-bottom: 50px;
+        }
+        .s15 img{
+            margin-top: -60px;
         }
     }
-    @media all and (max-width: 575px){
+    @media all and (max-width: 736px){
         .carousel{
             margin-left: 45px;
         }
