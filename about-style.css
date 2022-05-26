@@ -40,6 +40,7 @@
     }
 .motto-divider{
     background-color: white;
+    min-width: 100%;
 }
 .motto-two{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -51,3 +52,17 @@
     .motto-two p{
         font-size: 20px;
     }
+@media all and (max-width: 575px){
+    .motto{
+        display: flex;
+        flex-direction: column;
+    }
+    .motto-two{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        max-width: 100%;
+        height: auto;       
+    }
+}
