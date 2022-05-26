@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    color: white;
+}
+.body{
+    background-color: #020202;
+}
+.navbar{
+    background-color: #1B1B1B;
+    opacity: 0.9;
+    min-height: 100px;
+    font-family: 'Staatliches';
+}
+    .dropdown-menu > li > a:hover{
+        background-color: #020202;
+    }
+    .nav-item a:hover{
+        text-decoration: underline;
+    }
+.footer{
+    background-color: #020202;
+    font-family: 'Staatliches';
+}
+.motto{
+    margin-top: 100px;
+    background-color:  #020202;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+    .motto h1{
+        font-family: 'Staatliches';
+    }
+    .motto p{
+        font-size: 15px;
+    }
+    .image{
+        min-width: 100%;
+        height: auto;       
+    }
+.motto-divider{
+    background-color: white;
+}
+.motto-two{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+    .motto-two h1{
+        font-family: 'Staatliches';
+    }
+    .motto-two p{
+        font-size: 20px;
+    }
