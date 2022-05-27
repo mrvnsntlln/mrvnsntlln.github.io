@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.body{
+    background-color: #020202;
+}
+.navbar{
+    background-color: #1B1B1B;
+    opacity: 0.9;
+    min-height: 100px;
+    font-family: 'Staatliches';
+}
+    .dropdown-menu > li > a:hover{
+        background-color: #020202;
+    }
+    .nav-item a:hover{
+        text-decoration: underline;
+    }
+.contact{
+    margin-top: 100px;
+}
+    .contact p{
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .contact h1{
+        font-family: 'Staatliches';
+    }
+    .contact label{
+        font-family: 'Staatliches';
+    }
+    .modal-btn{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bolder;
+        background: #1B1B1B;
+        color: white;
+    }
+    .modal-body{
+        color: black; 
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    .location p{
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .location h1{
+        font-family: 'Staatliches';
+    }
+    @media all and (max-width: 575px){
+        .contact{
+            display: flex;
+            flex-direction: column;
+        }
+        .location{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+.footer{
+    background-color: #020202;
+    font-family: 'Staatliches';
+}

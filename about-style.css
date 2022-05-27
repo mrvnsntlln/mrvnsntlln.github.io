@@ -32,11 +32,11 @@
         font-family: 'Staatliches';
     }
     .motto p{
-        font-size: 15px;
+        font-size: 25px;
     }
     .image{
         min-width: 100%;
-        height: auto;       
+        min-height: 100%;       
     }
 .motto-divider{
     background-color: white;
@@ -56,6 +56,9 @@
     .motto{
         display: flex;
         flex-direction: column;
+    }
+    .motto-one{
+        padding: 50px;
     }
     .motto-two{
         display: flex;

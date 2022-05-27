@@ -30,7 +30,7 @@
         font-size: 80px;
     }
     .hero-section p{
-        font-family: 'EB Garamond';
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 30px;
     }
     @media all and (max-width: 1000px){
