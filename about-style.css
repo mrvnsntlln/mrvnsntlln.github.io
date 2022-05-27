@@ -68,4 +68,7 @@
         max-width: 100%;
         height: auto;       
     }
+    .motto-one p{
+        font-size: 15px;
+    }
 }
